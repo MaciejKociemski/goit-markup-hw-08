@@ -1,0 +1,27 @@
+.areaDescription {
+    border: 1px solid $shadowcolor;
+    margin-top: -5px;
+}
+
+.areaDescription__header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.89;
+    letter-spacing: 0.06em;
+    padding-left: 24px;
+    padding-top: 20px;
+
+    color: $black;
+}
+
+.areaDescription__sign {
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.88;
+    text-align: left;
+    letter-spacing: 0.03em;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    color: $gray;
+}

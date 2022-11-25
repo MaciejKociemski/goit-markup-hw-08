@@ -1,0 +1,51 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $black;
+}
+
+.footer__flex {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer__contact {
+    font-size: 14px;
+    font-weight: 400;
+    color: $white;
+    text-decoration: none;
+}
+
+.footer__address {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    color: $white;
+    margin-top: 1.5em;
+}
+
+.footer__whiteLogo {
+    font-family: 'Raleway';
+    color: $white;
+    font-size: 26px;
+}
+
+.footer__mail,
+.footer__phone {
+
+    text-decoration: none;
+    color: $white;
+    opacity: 60%;
+
+
+&:hover,
+&:focus{color: $blue;
+    stroke: $blue;
+    transition-duration: 250ms;
+    transition-timing-function: $cubic;}
+
+}
+
+
