@@ -5,17 +5,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/main.min.css" rel="stylesheet">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/modern-normalize@1.1.0/modern-normalize.css" />
-    <title>homework_7</title>
+    <link href="css/main.min.css" rel="stylesheet">
+    <title>homework_8</title>
 </head>
 
 <body>
+
+
+    <!-- mobile menu -->
+    <!-- <div class="mobile-menu d-none">
+        <button class="toggle-menu">X</button>
+    </div> -->
+    <!-- mobile menu ends -->
+
+
+
+
     <!-- header with logo, navigaion & contacts-->
     <header class="header">
 
@@ -183,10 +195,9 @@
                 <!-- ourTeam list-->
                 <ul class="ourTeam__list">
                     <li class="ourTeam__member">
-                        <!-- ourTeam 1st person product designer photo name & occupation-->
+                        <!-- ourTeam 1st person product designer photo name & occupation   src="images/Product_designer_450_460.webp"-->
                         <figure class="ourTeam__people">
-                            <img src="images/4853.jpg" width="270" height="260"
-                                alt="young man with dark beard and glasses" />
+                            <img class="imageTeam" src="images/Product_designer_450_460.webp"  alt="smiles man with glacess" />
                             <figcaption>
                                 <p class="ourTeam__worker-name">John Doe</p>
                                 <p class="ourTeam__worker-occupation">Product Designer</p>
@@ -232,7 +243,7 @@
                     <li class="ourTeam__member">
                         <!-- ourTeam 2nd person frontend developer photo name & occupation-->
                         <figure class="ourTeam__people">
-                            <img src="images/5844.jpg" width="270" height="260" alt="smiling blonde with glasses" />
+                            <img  class="imageTeam" src="images/Fronted_developer_450_460.webp"  alt="smiling blonde with glasses" />
                             <figcaption>
                             <p class="ourTeam__worker-name">John Doe</p>
                                 <p class="ourTeam__worker-occupation">
@@ -277,7 +288,7 @@
                     <li class="ourTeam__member">
                         <!-- ourTeam 3rd person marketing photo name & occupation-->
                         <figure class="ourTeam__people">
-                            <img src="images/16166.jpg" width="270" height="260" alt="young man in a bright shirt" />
+                            <img class="imageTeam" src="images/Marketing_450_460.webp"  alt="young man in a bright shirt" />
                             <figcaption>
                             <p class="ourTeam__worker-name">John Doe</p>
                                 <p class="ourTeam__worker-occupation"> Marketing</p>
@@ -322,7 +333,7 @@
                     <li class="ourTeam__member">
                         <!-- ourTeam 4th person UI designer photo name & occupation-->
                         <figure class="ourTeam__people">
-                            <img src="images/2968.jpg" width="270" height="260" alt="young man i dark t-shirt" />
+                            <img class="imageTeam" src="images/UI_designer_450_460.webp"  alt="young man i dark t-shirt" />
                             <figcaption>
                             <p class="ourTeam__worker-name">John Doe</p>
                                 <p class="ourTeam__worker-occupation">UI Designer</p>
@@ -608,7 +619,11 @@
             </form>
         </div>
     </div>
+
+ 
+
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 
     <!--end script-->
 </body>

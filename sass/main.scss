@@ -1,5 +1,6 @@
 
 @import "./utils/variables";
+@import "./base/container";
 @import "./base/body";
 @import "./theme/theme";
 @import "./components/page-header";
@@ -7,7 +8,6 @@
 @import "./components/contacts";
 @import "./components/modal";
 @import "./base/is-hidden";
-@import "./base/container";
 @import "./base/h2";
 @import "./layout/technologies";
 @import "./components/form";

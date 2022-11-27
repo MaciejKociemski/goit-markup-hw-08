@@ -1,3 +1,5 @@
+// @media screen and (min-width: $desktop)
+
 .icon-Logo {
     margin: 24px 50px 20px;
 }
@@ -15,14 +17,50 @@
     margin-left: 30px;
 }
 
-.imageBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 206px;
-    gap: 10px;
-    margin: 0px 32px 18px;
+
+    .imageBox {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 206px;
+        gap: 10px;
+        margin: 0px 32px 18px;
+        margin-left: 120px;
+    }
+
+@media screen and (min-width:$tablet) {
+    .imageBox {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 206px;
+        gap: 10px;
+        margin: 0px 32px 18px;
+        margin-left: 70px;
+    }
 }
+
+@media screen and (min-width:$desktop) {
+    .imageBox {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 206px;
+        gap: 10px;
+        margin: 0px 32px 18px;
+    }
+}
+// .imageBox {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 206px;
+//     gap: 10px;
+//     margin: 0px 32px 18px;
+// }
 
 .imageBox__icon {
     display: inline-flex;
