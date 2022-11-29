@@ -20,7 +20,7 @@
 
 @media screen and (min-width:$tablet) {
     .title {
-        background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Header_img_768_400.webp);
+        background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/Header_img_768_400.webp");
         max-width: $desktop;
         height: 400px;
     }
@@ -29,7 +29,7 @@
 @media screen and (min-width:$desktop) {
     .title {
         background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(/images/Header_img_1600_600.webp);
+            url("/images/Header_img_1600_600.webp");
         max-width: 1600px;
         height: 600px;
     }
