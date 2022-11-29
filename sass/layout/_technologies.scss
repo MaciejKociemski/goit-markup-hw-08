@@ -72,7 +72,8 @@
 
 .technologies__list {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    
     justify-content: center;
     margin-top: 94px;
     gap: 30px;
@@ -98,9 +99,9 @@
 }
 
 .technologies__text {
-    // text-align: center;
-    width: 450px;
-    height: 50px;
+    
+    width: 354px;
+    height: 75px;
     color: $gray;
     font-size: 14px;
     letter-spacing: 0.07em;
@@ -118,8 +119,9 @@
         align-items: center;
         justify-content: center;
         margin-top: 94px;
-        gap: 30px;
+        gap: 20px;
         text-align: justify;
+
     } .technologies__icons {
          max-width: 270px;
          max-height: 120px;
@@ -131,7 +133,7 @@
         margin: 25px 100px;
     }
     .technologies__header {
-        
+        text-align: left;
         color: $black;
         font-size: 14px;
         font-weight: 700;

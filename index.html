@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,48 +16,94 @@
     <title>homework_8</title>
 </head>
 
-<body>
 
+<header class="header">
 
-    <!-- mobile menu -->
-    <!-- <div class="mobile-menu d-none">
-        <button class="toggle-menu">X</button>
-    </div> -->
-    <!-- mobile menu ends -->
-
-
-
-
+    
     <!-- header with logo, navigaion & contacts-->
-    <header class="header">
-
+    
         <div class="container header__wrapper">
-            <!--logo WebStudio with blueaccent-->
+
+    <!--logo WebStudio with blueaccent-->
             <a href="./index.html" class="logo"><span class="blueaccent">Web</span>Studio</a>
-
-
-
             <!--navigation links-->
             <nav class="header__nav">
                 <ul class="header__links">
                     <li><a href="./index.html" class="header__link underlineLink">Agencja</a></li>
                     <li><a href="./portfolio.html" class="header__link">Portfolio</a></li>
-                    <li><a href="#" class="header__link">Kontakt</a></li>
+                    <li><a href="#" class="header__link">Kontakt</a>
+                    </li>
                 </ul>
+              
             </nav>
+
             <!--contact phone and email-->
             <ul class="contact">
-                <li>
-                    <a href="mailto:info@devstudio.com" class="contact__mail"><svg class="envelope" width="16"
+                <li class="contact__list">
+                    <a href="mailto:info@devstudio.com" class="contact__mail contact__position"><svg class="envelope" width="16"
                             height="12">
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>info@devstudio.com</a>
                 </li>
-                <li><a href="tel:+48111111111" class="contact__phone"><svg class="smartphone" width="10" height="16">
+                <li class="contact__list"><a href="tel:+48111111111" class="contact__phone contact__position"><svg class="smartphone" width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>+48 111 111 111</a></li>
             </ul>
+
+    <!--menu toggle-->
+
+            <button class="menu-open" data-menu-open>
+                <svg class="menu-burger" width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu" width="40px" height="40px"></use>
+                </svg>
+            </button>
         </div>
+<!-- mobile menu    is-open-->
+<div class="mob-menu flex is-hidden" data-menu>
+    <div>
+        <button class="menu-close" data-menu-close>
+            <svg class="menu-close" width="40" height="40">
+                <use href="./images/icons.svg#icon-close-cross-svgrepo-com" width="20px" height="40px">
+                </use>
+            </svg>
+        </button>
+        <ul class="mob-menu-list list">
+            <li class="mob-menu-list__item">
+                <a class="mob-menu-list__link link " href="./index.html">Agencja</a>
+            </li>
+            <li class="mob-menu-list__item">
+                <a class="mob-menu-list__link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mob-menu-list__item">
+                <a class="mob-menu-list__link link" href="">Kontakt</a>
+            </li>
+            </ul>
+        </div>
+<div class="mob-menu-list__down">
+                <a class="mob-menu-list__tel link" href="tel:+48111111111">+48 111 111 111</a>
+            
+            <a class="mob-menu-list__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+
+        <ul class="mob-menu-list__social list">
+            <li class="mob-menu-list__social-item">
+                <a class="mob-menu__link-social" href="https://www.instagram.com">Instagram</a>
+            </li>
+            <li class="mob-menu-list__social-item">
+                <a class="mob-menu__link-social" href="https://twitter.com/">Twitter</a>
+            </li>
+            <li class="mob-menu-list__social-item">
+                <a class="mob-menu__link-social"  href="https://www.facebook.com/">Facebook</a>
+            </li>
+            <li class="mob-menu-list__social-item">
+                <a class="mob-menu__link-social" href="https://www.linkedin.com/">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- mobile menu ends -->
+
+
+
     </header>
     <!--end header-->
 
@@ -197,7 +243,12 @@
                     <li class="ourTeam__member">
                         <!-- ourTeam 1st person product designer photo name & occupation   src="images/Product_designer_450_460.webp"-->
                         <figure class="ourTeam__people">
-                            <img class="imageTeam" src="images/Product_designer_450_460.webp"  alt="smiles man with glacess" />
+                            <img class="imageTeam" alt="smiles man with glacess"
+                                src="images/Product_Designer_270_260.webp" srcset="
+                            images/Product_Designer_270_260.webp 480w,
+                            images/Product_designer_354_376.webp 768w,
+                            images/Product_Designer_450_460.webp 1200w
+                            " />
                             <figcaption>
                                 <p class="ourTeam__worker-name">John Doe</p>
                                 <p class="ourTeam__worker-occupation">Product Designer</p>
@@ -243,9 +294,14 @@
                     <li class="ourTeam__member">
                         <!-- ourTeam 2nd person frontend developer photo name & occupation-->
                         <figure class="ourTeam__people">
-                            <img  class="imageTeam" src="images/Fronted_developer_450_460.webp"  alt="smiling blonde with glasses" />
+                            <img class="imageTeam" alt="smiling blonde with glasses"
+                                src="images/Frontend_developer_270_260.webp" srcset="
+                            images/Frontend_developer_270_260.webp,
+                            images/Frontend_developer_354_376.webp,
+                            images/Frontend_developer_450_460.webp
+                            " />
                             <figcaption>
-                            <p class="ourTeam__worker-name">John Doe</p>
+                                <p class="ourTeam__worker-name">John Doe</p>
                                 <p class="ourTeam__worker-occupation">
                                     Frontend Developer</p>
                                 <!--social media instagram tt fb linkedin-->
@@ -288,9 +344,15 @@
                     <li class="ourTeam__member">
                         <!-- ourTeam 3rd person marketing photo name & occupation-->
                         <figure class="ourTeam__people">
-                            <img class="imageTeam" src="images/Marketing_450_460.webp"  alt="young man in a bright shirt" />
+                            <img class="imageTeam" alt="young man in a bright shirt" src="images/Marketing_270_260.webp"
+                                srcset="
+                            images/Marketing_270_260.webp,
+                            images/Marketing_354_376.webp,
+                            images/Marketing_450_460.webp
+                            
+                            " />
                             <figcaption>
-                            <p class="ourTeam__worker-name">John Doe</p>
+                                <p class="ourTeam__worker-name">John Doe</p>
                                 <p class="ourTeam__worker-occupation"> Marketing</p>
 
                                 <!--social media instagram tt fb linkedin-->
@@ -333,9 +395,15 @@
                     <li class="ourTeam__member">
                         <!-- ourTeam 4th person UI designer photo name & occupation-->
                         <figure class="ourTeam__people">
-                            <img class="imageTeam" src="images/UI_designer_450_460.webp"  alt="young man i dark t-shirt" />
+                            <img class="imageTeam" alt="young man i dark t-shirt" src="images/UI_designer_270_260.webp"
+                                srcset="
+                            images/UI_designer_270_260.webp,
+                            images/UI_designer_354_376.webp,
+                            images/UI_designer_450_460.webp
+
+                            " />
                             <figcaption>
-                            <p class="ourTeam__worker-name">John Doe</p>
+                                <p class="ourTeam__worker-name">John Doe</p>
                                 <p class="ourTeam__worker-occupation">UI Designer</p>
 
 
@@ -381,7 +449,7 @@
         <!-- end of 4th section- - our team and cards and social media -->
 
         <!--section customers-->
-        
+
         <section class="customers">
             <div class="container">
                 <h2 class="h2-title">Nasi klienci</h2>
@@ -390,7 +458,7 @@
                     <li>
                         <div class="customers__box">
                             <a href="#">
-                                <svg class="icon-Logo" width="71" height="46.7">
+                                <svg class="icon-Logo" width="106" height="60">
                                     <use href="./images/icons.svg#icon-Logo"></use>
 
                                 </svg>
@@ -402,7 +470,7 @@
                     <li class="customers__box">
 
                         <a href="#">
-                            <svg class="icon-Logo" width="71" height="46.7">
+                            <svg class="icon-Logo" width="106" height="60">
                                 <use href="./images/icons.svg#icon-Logo-1"></use>
 
                             </svg>
@@ -412,7 +480,7 @@
                     <li class="customers__box">
 
                         <a href="#">
-                            <svg class="icon-Logo" width="71" height="46.7">
+                            <svg class="icon-Logo" width="106" height="60">
                                 <use href="./images/icons.svg#icon-Logo-2"></use>
 
                             </svg>
@@ -422,7 +490,7 @@
                     <li class="customers__box">
 
                         <a href="#">
-                            <svg class="icon-Logo" width="71" height="46.7">
+                            <svg class="icon-Logo" width="106" height="60">
                                 <use href="./images/icons.svg#icon-Logo-3"></use>
 
                             </svg>
@@ -432,7 +500,7 @@
                     <li class="customers__box">
 
                         <a href="#">
-                            <svg class="icon-Logo" width="71" height="46.7">
+                            <svg class="icon-Logo" width="106" height="60">
                                 <use href="./images/icons.svg#icon-Logo-4"></use>
 
                             </svg>
@@ -443,7 +511,7 @@
                     <li class="customers__box">
 
                         <a href="#">
-                            <svg class="icon-Logo" width="71" height="46.7">
+                            <svg class="icon-Logo" width="106" height="60">
                                 <use href="./images/icons.svg#icon-Logo-5"></use>
 
                             </svg>
@@ -463,7 +531,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__flex">
-                <div>
+                <div class="footer__border">
 
                     <a href="./index.html" class="logo">
                         <span class="blueaccent">Web</span>
@@ -589,7 +657,7 @@
                         <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
                     </svg>
                 </div>
-    
+
                 <div class="form__field">
                     <label class="form__label" for="email">Email</label>
                     <input class="form__input" type="email" name="email" id="email" placeholder="enter your e-mail">
@@ -620,10 +688,10 @@
         </div>
     </div>
 
- 
+
 
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 
     <!--end script-->
 </body>

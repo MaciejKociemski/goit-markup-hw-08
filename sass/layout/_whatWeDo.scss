@@ -1,5 +1,12 @@
+
+    .whatWeDo {
+        display: none;
+    }
+   
+@media screen and (min-width: $desktop){
 .whatWeDo {
-    padding: 94px 0;
+    display:contents;
+    padding: 24px 0;
 }
 
 .whatWeDo__item {
@@ -23,28 +30,12 @@
     color: $white;
     background-color: rgba(47, 48, 58, 0.8);
 }
-
-
-@media screen and (min-width: $mobile){
-    .whatWeDo__list {
-            display: none;
-        }
-        .nondisplay{color: aliceblue;}
-}
-
-@media screen and (min-width: $tablet){
-    
-        .whatWeDo__list {
-            display: none;
-        }
-}
-
-@media screen and (min-width: $desktop){
  .whatWeDo__list {
-    display: flex;
-    justify-content: space-between;
+     display: flex;
+     justify-content: space-between;
      margin-top: 0;
-     margin-bottom: 0;
+     margin-bottom: 94px;
      padding-left: 0;
      gap: 30px;
  }}
+ 

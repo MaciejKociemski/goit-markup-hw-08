@@ -1,19 +1,25 @@
+//mobile first//
+
 .customers {
-    padding-top: 94px;
+    // padding-top: 24px;
     padding-bottom: 94px;
 }
 
 .customers__list {
     display: flex;
+    flex-wrap: wrap;
+    gap:30px;
     align-items: center;
-
+    justify-content: center;
     padding: 0;
-    flex-direction: row;
-    gap: 30px;
+
+    // gap: 30px;
+    
 }
 
 .customers__box {
-    width: 170px;
+
+    width: 210px;
     height: 92px;
     border: 1px solid $iconscolor;
     border-radius: 4px;
@@ -33,3 +39,87 @@
    }
 }
 
+
+
+//tbalet - jeszcze nie zmieniane tylko przekopiowane jak dla desktopu//
+@media screen and (min-width: $tablet){
+.customers {
+        
+        padding-top: 24px;
+        padding-bottom: 94px;
+    }
+
+    .customers__list {
+        
+        display: flex;
+        align-items: center;
+
+        padding: 0;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .customers__box {
+        width: 170px;
+        height: 92px;
+        border: 1px solid $iconscolor;
+        border-radius: 4px;
+        background-color: $white;
+        fill: $iconscolor;
+        gap: 30px;
+
+        &:hover,
+        &:focus {
+            --color2: #2196f3;
+            border-color: $blue;
+            border-radius: 4px;
+            background-color: $white;
+            fill: $blue;
+            cursor: pointer;
+            transition-duration: 250ms;
+            transition-timing-function: $cubic;
+        }
+    }
+}
+
+//desktop code no changes//
+
+@media screen and (min-width: $desktop) {
+    .customers {
+        
+        padding-top: 24px;
+        padding-bottom: 94px;
+    }
+
+    .customers__list {
+        
+        display: flex;
+        align-items: center;
+
+        padding: 0;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .customers__box {
+        width: 170px;
+        height: 92px;
+        border: 1px solid $iconscolor;
+        border-radius: 4px;
+        background-color: $white;
+        fill: $iconscolor;
+        gap: 30px;
+
+        &:hover,
+        &:focus {
+            --color2: #2196f3;
+            border-color: $blue;
+            border-radius: 4px;
+            background-color: $white;
+            fill: $blue;
+            cursor: pointer;
+            transition-duration: 250ms;
+            transition-timing-function: $cubic;
+        }
+    }
+}
