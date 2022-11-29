@@ -7,8 +7,9 @@
     right: 0;
     padding: 15px 10px 48px 40px;
     z-index: 999;
-    
-    &__link-social{font-weight: 500;
+
+    &__link-social {
+        font-weight: 500;
         font-size: 18px;
         line-height: calc(22 / 18);
         letter-spacing: 0.02em;
@@ -38,12 +39,13 @@
     cursor: pointer;
 
     &:hover,
-        &:focus {
-            fill: $blue;
-        }
+    &:focus {
+        fill: $blue;
+    }
+
     @media screen and (min-width: $tablet) {
-            display: none;        
-}
+        display: none;
+    }
 }
 
 // .menu-burger{align-items: center;}
@@ -58,9 +60,9 @@
     cursor: pointer;
 
     &:hover,
-        &:focus {
-            fill: $blue;
-        }
+    &:focus {
+        fill: $blue;
+    }
 }
 
 .mob-menu-list__item {
@@ -99,8 +101,9 @@
     letter-spacing: 0.02em;
 
     &:hover,
-    &:focus{
-    color: $blue;}
+    &:focus {
+        color: $blue;
+    }
 }
 
 .mob-menu-list__mail {
@@ -112,11 +115,11 @@
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    color:$gray;
+    color: $gray;
     margin-bottom: 64px;
 
     &:hover,
-    &:focus{
+    &:focus {
         color: $blue;
     }
 }
@@ -130,7 +133,6 @@
 
 .mob-menu-list__social-item {
     position: relative;
-
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
@@ -156,31 +158,17 @@
 }
 
 
-@media screen and (max-width: $tablet){
+@media screen and (max-width: $tablet) {
 
- .contact__list{display: none;}}
-
-// @media screen and (min-width: 768px){
-//     .contact__mail, .contact__phone{
-        
-      
-
-//     }
-
+    .contact__list {
+        display: none;
+    }
+}
 
 .list {
     list-style: none;
 }
 
-
-
 .link {
     text-decoration: none;
-  
 }
-
-
-
-
-
-

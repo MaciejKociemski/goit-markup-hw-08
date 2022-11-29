@@ -1,41 +1,41 @@
-
-    .whatWeDo {
-        display: none;
-    }
-   
-@media screen and (min-width: $desktop){
 .whatWeDo {
-    display:contents;
-    padding: 24px 0;
+    display: none;
 }
 
-.whatWeDo__item {
-    position: relative;
-}
+@media screen and (min-width: $desktop) {
+    .whatWeDo {
+        display: contents;
+        padding: 24px 0;
+    }
 
-.whatWeDo__range {
-    display: inline-block;
-    width: 370px;
-    height: 70px;
-    position: absolute;
-    bottom: -10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    justify-content: center;
-    padding: 27px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $white;
-    background-color: rgba(47, 48, 58, 0.8);
+    .whatWeDo__item {
+        position: relative;
+    }
+
+    .whatWeDo__range {
+        display: inline-block;
+        width: 370px;
+        height: 70px;
+        position: absolute;
+        bottom: -10px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        justify-content: center;
+        padding: 27px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $white;
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+
+    .whatWeDo__list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0;
+        margin-bottom: 94px;
+        padding-left: 0;
+        gap: 30px;
+    }
 }
- .whatWeDo__list {
-     display: flex;
-     justify-content: space-between;
-     margin-top: 0;
-     margin-bottom: 94px;
-     padding-left: 0;
-     gap: 30px;
- }}
- 

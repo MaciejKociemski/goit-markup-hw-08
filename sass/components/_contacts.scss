@@ -1,15 +1,16 @@
+@media screen and (min-width:$tablet) {
+    .contact {
+        width: 160px;
 
-@media  screen and (min-width:$tablet) {
-    .contact{width:160px;
-        // display: flex;
-        // margin-left: 84px;
-        // flex-wrap: wrap;
     }
- }
+}
 
 
-@media screen and (min-width:$desktop){
-    .contact{width:auto;display: inline-flex;}
+@media screen and (min-width:$desktop) {
+    .contact {
+        width: auto;
+        display: inline-flex;
+    }
 }
 
 .contact__mail {
@@ -18,14 +19,16 @@
     font-size: 14px;
     font-weight: 500;
     text-decoration-line: none;
-    
-    
+
+
 
     &:hover,
-    &:focus{--color4: #2196f3;
+    &:focus {
+        --color4: #2196f3;
         color: $blue;
         transition-duration: 250ms;
-        transition-timing-function: $cubic;}
+        transition-timing-function: $cubic;
+    }
 }
 
 
@@ -37,10 +40,12 @@
     text-decoration-line: none;
 
     &:hover,
-    &:focus{--color4: #2196f3;
+    &:focus {
+        --color4: #2196f3;
         color: $blue;
         transition-duration: 250ms;
-        transition-timing-function: $cubic;}
+        transition-timing-function: $cubic;
+    }
 }
 
 @media screen and (max-width: $tablet) {
@@ -50,4 +55,3 @@
     }
 }
 
-.contact__list{}

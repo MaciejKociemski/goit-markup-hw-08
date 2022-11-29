@@ -1,29 +1,4 @@
-// @media screen and (min-width:$desktop)
-
-
-
-// .technologies__header {
-//     color: $black;
-//     font-size: 14px;
-//     font-weight: 700;
-//     line-height: 1.71;
-//     letter-spacing: 0.03em;
-// }
-
-// .technologies__text {
-//     width: 270px;
-//     height: 75px;
-//     color: $gray;
-//     font-size: 14px;
-//     letter-spacing: 0.03em;
-//     font-weight: 400;
-//     line-height: 1.71;
-//     cursor: pointer;
-
-// }
-
-
-    .technologies__list {
+ .technologies__list {
             // display: flex;
             align-items: center;
             justify-content: center;
@@ -74,40 +49,25 @@
     display: flex;
     flex-wrap: wrap;
     
-    justify-content: center;
+    
     margin-top: 94px;
     gap: 30px;
-    text-align: justify;
+    
 } 
 .technologies__icons {
      max-width: 354px;
-     max-height: 120px;
-     background: $btngray;
-     border-radius: 4px;
-     // margin-bottom: 30px;
+     
 }
 .technologies__icons--icon {
     margin: 25px 140px;
 }
-.technologies__header {
-    text-align: center;
-    color: $black;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-}
+
 
 .technologies__text {
     
     width: 354px;
     height: 75px;
-    color: $gray;
-    font-size: 14px;
-    letter-spacing: 0.07em;
-    font-weight: 400;
-    line-height: 1.71;
-    cursor: pointer;
+    
 
 }
 }
@@ -116,17 +76,13 @@
 
     .technologies__list {
         display: flex;
-        align-items: center;
-        justify-content: center;
         margin-top: 94px;
         gap: 20px;
-        text-align: justify;
+        
 
     } .technologies__icons {
          max-width: 270px;
-         max-height: 120px;
-         background: $btngray;
-         border-radius: 4px;
+    
          margin-bottom: 30px;
     }
     .technologies__icons--icon {
@@ -134,35 +90,17 @@
     }
     .technologies__header {
         text-align: left;
-        color: $black;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
+        
     }
     
     .technologies__text {
         
         width: 270px;
         height: 75px;
-        color: $gray;
-        font-size: 14px;
         letter-spacing: 0.03em;
-        font-weight: 400;
-        line-height: 1.71;
-        cursor: pointer;
+
     
     }}
 
 
-// .technologies__icons {
-//     width: 270px;
-//     height: 120px;
-//     background: $btngray;
-//     border-radius: 4px;
-//     margin-bottom: 30px;
-// }
-
-// .technologies__icons--icon {
-//     margin: 25px 180px;
-// }
+/
