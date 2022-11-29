@@ -48,9 +48,24 @@
 }
 
 @media screen and (min-width:$desktop) {
-   
-}
+    .imageBox {
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 206px;
+        gap: 10px;
+        margin: 0px 32px 18px;
+    }
+}
+// .imageBox {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 206px;
+//     gap: 10px;
+//     margin: 0px 32px 18px;
+// }
 
 .imageBox__icon {
     display: inline-flex;
