@@ -1756,7 +1756,6 @@ textarea:hover, textarea:focus {
 .screen-portfolio {
   width: 370px;
   height: auto;
-  border: 1px solid red;
 }
 
 .portfolio__nav-list--buttons {
